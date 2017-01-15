@@ -19,6 +19,7 @@
   &:target {
     outline: none;
     display: block;
+    cursor: url('cursor.png'), default;
   }
 
   img {
