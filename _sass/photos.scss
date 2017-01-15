@@ -12,12 +12,6 @@
   &:last-child {
     border: none;
   }
-
-  &:hover {
-    .photos__hover-title {
-      display: table;
-    }
-  }
 }
 
 .photos__hover-title {
@@ -42,15 +36,45 @@
 
 .photos__img {
   float: left;
-	width: 6.25%;
-  height: 55px;
-  line-height: 55px;
+	width: 50%;
+  height: 200px;
+  line-height: 200px;
   text-align: center;
   overflow: hidden;
 
   img {
     max-width: 90%;
     max-height: 90%;
+    margin-bottom: 20px;
     vertical-align: middle;
+  }
+}
+
+// media queries
+@include media-query($on-palm) {
+  .photos__img {
+    width: 10%;
+    height: 80px;
+    line-height: 80px;
+
+    img {
+      max-width: 90%;
+      max-height: 90%;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include media-query($on-laptop) {
+  .photos {
+    &:hover .photos__hover-title {
+      display: table;
+    }
+  }
+
+  .photos__img {
+    width: 6.25%;
+    height: 55px;
+    line-height: 55px;
   }
 }
