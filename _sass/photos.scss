@@ -15,12 +15,13 @@
 
   &:hover {
     .photos__hover-title {
-      display: block;
+      display: table;
     }
   }
 }
 
 .photos__hover-title {
+  @extend .container;
   display: none;
   position: fixed;
   top: 0;
@@ -30,18 +31,11 @@
   text-align: center;
   z-index: -1;
 
-  &:before {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    content: ' ';
-  }
-
   div {
-    // font-family: 'Helvetica';
-    font-weight: 900;
+    display: table-cell;
+    line-height: 150px;
+    font-weight: 700;
     font-size: 150px;
-    display: inline-block;
     vertical-align: middle;
   }
 }
