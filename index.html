@@ -3,13 +3,22 @@ layout: default
 ---
 
 {% if site.posts %}
-  <div class="roll">
-    {% for post in site.posts %}
-      {% for img in post.roll %}
-        <div class="roll__img">
-          <img alt="{{ img[0] }}" src="{{ img[1] }}" />
+  {% for post in site.posts %}
+    <div class="photos">
+      <div class="photos__title">
+        <div>{{ post.title }}</div>
+      </div>
+      {% for img in post.photos %}
+        <div class="photos__img">
+          <a href="#{{ img[0] }}">
+            <img src="{{ img[1] }}" alt="{{ img[0] }}" />
+          </a>
+          <a class="lightbox" id="{{ img[0] }}" href="#_">
+
+            <img src="{{ img[1] }}" alt="{{ img[0] }}" />
+          </a>
         </div>
       {% endfor %}
-    {% endfor %}
-  </div>
+    </div>
+  {% endfor %}
 {% endif %}
