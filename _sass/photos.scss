@@ -14,13 +14,13 @@
   }
 
   &:hover {
-    .photos__title {
+    .photos__hover-title {
       display: block;
     }
   }
 }
 
-.photos__title {
+.photos__hover-title {
   display: none;
   position: fixed;
   top: 0;

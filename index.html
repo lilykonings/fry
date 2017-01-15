@@ -6,6 +6,9 @@ layout: default
   {% for post in site.posts %}
     <div class="photos">
       <div class="photos__title">
+        {{ post.date | date: "%Y-%m-%d" }} | {{ post.title }}
+      </div>
+      <div class="photos__hover-title">
         <div>{{ post.title }}</div>
       </div>
       {% for img in post.photos %}
