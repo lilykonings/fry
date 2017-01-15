@@ -2,4 +2,14 @@
 layout: default
 ---
 
-{% include posts_list.html %}
+{% if site.posts %}
+  <div class="roll">
+    {% for post in site.posts %}
+      {% for img in post.roll %}
+        <div class="roll__img">
+          <img alt="{{ img[0] }}" src="{{ img[1] }}" />
+        </div>
+      {% endfor %}
+    {% endfor %}
+  </div>
+{% endif %}

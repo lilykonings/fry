@@ -1,0 +1,18 @@
+.roll {
+  width: 100%;
+}
+
+.roll__img {
+  float: left;
+	width: 10%;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  overflow: hidden;
+
+  img {
+    max-width: 90%;
+    max-height: 90%;
+    vertical-align: middle;
+  }
+}
