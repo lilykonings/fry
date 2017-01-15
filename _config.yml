@@ -1,24 +1,15 @@
 # site
-title: Louie
-baseurl: "/louie"
+title: Fry
+baseurl: "/fry"
 url: "http://lillian-chen.com"
 favicon: "/assets/sample/ico.png"
 g_analytics: UA-12345678-1
 
 # bio
-header: Louie
+header: Fry
 desc: >
-  A Jekyll theme (that looks awesome). Louie is free, lightweight,
-  and customizable as a blog, archive, or portfolio.
-
-# posts
-date_format: "%Y"
-post_title: Story
-post_date: Year
-post_cat: Genre
-
-# post detail
-prev-next: true
+  Fry is <a href="https://github.com/lllychen/louie" target="_blank">Louie</a>'s
+  much more graphic-heavy, photogenic brother (still a Jekyll theme tho).
 
 # build settings
 markdown: kramdown
