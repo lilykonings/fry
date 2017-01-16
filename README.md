@@ -71,3 +71,9 @@ photos:
 ```
 
 The unique ID for each photo will be important as it is needed for the lightbox to work properly.
+
+## License
+The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+## Credit
+Images collected by [New Old Stock](http://nos.twnsnd.co/)
