@@ -11,6 +11,9 @@ desc: >
   Fry is <a href="https://github.com/lllychen/louie" target="_blank">Louie</a>'s
   much more graphic-heavy, photogenic brother (still a Jekyll theme tho).
 
+# posts
+# date_format: "%Y"
+
 # build settings
 markdown: kramdown
 # theme: louie
